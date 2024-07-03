@@ -6,6 +6,7 @@ import education from '../../../image/Education.jpg'
 import html from '../../../image/html.png'
 import css from '../../../image/css.png'
 import tailwind from '../../../image/tailwind.png'
+import js from '../../../image/js.png'
 import react from '../../../image/reactjs.png'
 import node from '../../../image/nodejs.png'
 import express from '../../../image/express.png'
@@ -206,13 +207,44 @@ const Navbar = () => {
           </div>
           <img className="h-[500px] w-[400px] pb-5" src={aboutImage} alt="" />
         </section>
-        <section id="skill" className="lg:min-h-screen bg-black soraFont pt-24">
+        <section id="skill" className="lg:min-h-screen bg-black soraFont flex flex-col items-center justify-center gap-6 pt-10 lg:pt-0 px-5">
           <div className="text-center flex flex-col gap-4">
             <h1 className="text-4xl font-bold text-white">My Skills</h1>
             <p>I put your ideas and thus your wishes in the form of a unique web project <br /> that inspires you and you customers.</p>
           </div>
-          <div>
-            <img src={html} alt="" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 justify-center gap-6 p-4">
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+              <img className="h-16" src={html} alt="" />
+              <p>HTML</p>
+            </div>
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+              <img className="h-16" src={css} alt="" />
+              <p>CSS</p>
+            </div>
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+              <img className="h-16" src={tailwind} alt="" />
+              <p>TAILWIND CSS</p>
+            </div>
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+              <img className="h-16" src={js} alt="" />
+              <p>JAVASCRIPT</p>
+            </div>
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+              <img className="h-16" src={react} alt="" />
+              <p>REACTJS</p>
+            </div>
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+              <img className="h-16" src={node} alt="" />
+              <p>NODEJS</p>
+            </div>
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+              <img className="h-16" src={express} alt="" />
+              <p>NODEJS</p>
+            </div>
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+              <img className="h-16" src={mongodb} alt="" />
+              <p>MONGODB</p>
+            </div>
           </div>
         </section>
         <section id="education" className="lg:min-h-screen bg-[#202020] flex md:flex-row  lg:flex-row items-center lg:items-start flex-col lg:px-24 gap-6 justify-center lg:gap-[20rem] pt-5 px-5">
