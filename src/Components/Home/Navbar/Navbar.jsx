@@ -346,36 +346,33 @@ const Navbar = () => {
         <section id="education" className="lg:min-h-screen bg-black flex md:flex-row  lg:flex-row items-center lg:items-start flex-col lg:px-24 gap-6 justify-center lg:gap-[20rem] lg:py-20 pt-5 px-5">
           <div className="lg:w-screen flex flex-col gap-4">
             <h1 className="text-4xl text-white font-bold robotoFont">My Education</h1>
-            <div className="border-2 border-gray-600 flex flex-col gap-3 p-4 rounded-xl bg-[#140b1c] playfairFont text-[#764bf5] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 border-gray-600 flex flex-col gap-3 p-4 rounded-xl bg-[#140b1c] playfairFont text-[#764bf5] hover:bg-[#382263] duration-700 hover:text-white" data-aos="fade-up" data-aos-duration='1500'>
               <h2 className="text-2xl font-extrabold ">2015 - 2017</h2>
               <h2 className="text-3xl font-extrabold text-white">Secondary School</h2>
               <h2 className="text-xl font-bold text-gray-300">Rowson Ali High School</h2>
             </div>
-            <div className="border-2 border-gray-600 flex flex-col gap-3 p-4 rounded-xl bg-[#140b1c] playfairFont text-[#764bf5] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 border-gray-600 flex flex-col gap-3 p-4 rounded-xl bg-[#140b1c] playfairFont text-[#764bf5] hover:bg-[#382263] duration-700 hover:text-white" data-aos="fade-down" data-aos-duration='1500'>
               <h2 className="text-2xl font-extrabold ">2017 - 2019</h2>
               <h2 className="text-3xl font-extrabold text-white">Higher Secondary School</h2>
               <h2 className="text-xl font-bold text-gray-300">Govt.Science College,Tejgoan,Dhaka</h2>
             </div>
-            <div className="border-2 border-gray-600 flex flex-col gap-3 p-4 rounded-xl bg-[#140b1c] playfairFont text-[#764bf5] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 border-gray-600 flex flex-col gap-3 p-4 rounded-xl bg-[#140b1c] playfairFont text-[#764bf5] hover:bg-[#382263] duration-400 hover:text-white" data-aos="fade-up" data-aos-duration='1500'>
               <h2 className="text-2xl font-extrabold ">2022 - 2026</h2>
               <h2 className="text-3xl font-extrabold text-white">BSC in CSE</h2>
               <h2 className="text-xl font-bold text-gray-300">Green University of Bangladesh</h2>
             </div>
           </div>
-          <img className="pb-4 lg:pb-0 md:mt-14 h-[500px]" src={education} alt="" />
+          <img data-aos="flip-up" data-aos-duration='1500' className="pb-4 lg:pb-0 md:mt-14 h-[500px]" src={education} alt="" />
         </section>
         <section id="contact" className="lg:min-h-screen bg-[#0f0716] lg:mx-5">
           <div className="min-h-screen flex flex-col md:flex-row items-center  bg-[#0f0716] text-white">
-            {/* First Section: Send Message Form */}
-            <div className="flex-1 p-6 flex flex-col justify-center items-center">
-              {/* Heading and Paragraph */}
+            <div className="flex-1 p-6 flex flex-col justify-center items-center" data-aos="flip-left" data-aos-duration='1500'>
               <div className="mb-6 lg:px-16 libreFont">
                 <h2 className="text-3xl font-bold mb-2 text-[#764bf5]">Let’s work together!</h2>
                 <p className="text-gray-300">I design and code beautifully simple things and i love what i do. Just simple like that!</p>
               </div>
 
               <form className="space-y-6 w-full max-w-md">
-                {/* First Name and Last Name */}
                 <div className="flex flex-col md:flex-row gap-4">
                   <input
                     type="text"
@@ -389,7 +386,6 @@ const Navbar = () => {
                   />
                 </div>
 
-                {/* Email and Phone Number */}
                 <div className="flex flex-col md:flex-row gap-4">
                   <input
                     type="email"
@@ -403,13 +399,11 @@ const Navbar = () => {
                   />
                 </div>
 
-                {/* Message */}
                 <textarea
                   placeholder="Your Message"
                   className="w-full p-2 rounded bg-gray-800 border border-gray-700 h-32"
                 ></textarea>
 
-                {/* Send Message Button */}
                 <button
                   type="submit"
                   className="p-3 rounded-full duration-700 text-sm bg-purple-600 hover:bg-purple-800 libreFont"
@@ -419,8 +413,7 @@ const Navbar = () => {
               </form>
             </div>
 
-            {/* Second Section: Contact Information */}
-            <div className="flex-1 bg-black p-8 flex flex-col justify-center rounded-2xl lg:mr-5">
+            <div className="flex-1 bg-black p-8 flex flex-col justify-center rounded-2xl lg:mr-5" data-aos="flip-right" data-aos-duration='1500'>
               <div className="flex items-center mb-4 gap-4">
                 <FaPhoneVolume className="bg-[#764bf5] text-gray-200 size-12 p-2 rounded-full"></FaPhoneVolume>
                 <div className="libreFont">
