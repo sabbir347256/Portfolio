@@ -47,7 +47,9 @@ const Navbar = () => {
       <nav className="bg-black fixed w-full top-0 z-50 shadow-lg robotoFont">
         <div className="flex justify-between items-center p-4">
           <div>
-            <img className="rounded-full h-12 w-12" src={logo1} alt="" />
+            <a href="#home">
+              <img className="rounded-full h-12 w-12" src={logo1} alt="" />
+            </a>
           </div>
           <div className="lg:hidden">
             <button
@@ -313,7 +315,7 @@ const Navbar = () => {
               </h2>
               <h2 className="text-white"><span className="robotoFont">Live link</span> : <NavLink to='https://online-group-study-67ed0.web.app' className="text-blue-500">https://online-group-study-67ed0.web.app/</NavLink> </h2>
               <h2 className="text-white"><span className="robotoFont">Client site github link</span> : <NavLink to='https://github.com/sabbir347256/Dream-Travel-tourism-agency' className='text-blue-500'>https://github.com/sabbir347256/Online-Group-Study</NavLink></h2>
-              <h2 className="text-white"><span className="robotoFont">Server site github link</span> : <NavLink  to='https://github.com/sabbir347256/Dream-Travel-server-site' className='text-blue-500'>https://github.com/sabbir347256/Online-Group-Study-Server-site</NavLink> </h2>
+              <h2 className="text-white"><span className="robotoFont">Server site github link</span> : <NavLink to='https://github.com/sabbir347256/Dream-Travel-server-site' className='text-blue-500'>https://github.com/sabbir347256/Online-Group-Study-Server-site</NavLink> </h2>
             </div>
             <div className="lg:col-span-1 flex items-center mt-16 hidden lg:block">
               <img className="h-[500px]" src={verticleImage} alt="" />
@@ -439,22 +441,22 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="flex space-x-4 ml-3 mb-4 md:mb-0">
-              <a href="https://web.facebook.com/profile.php?id=100021748580543" target="_blank" rel="noopener noreferrer">
-                <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M22.675 0h-21.35c-.733 0-1.325.593-1.325 1.325v21.351c0 .732.593 1.324 1.325 1.324h11.494v-9.294h-3.122v-3.622h3.122v-2.667c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.462.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.762v2.31h3.587l-.467 3.622h-3.12v9.293h6.117c.733 0 1.325-.593 1.325-1.325v-21.351c0-.732-.593-1.325-1.325-1.325z" />
-                </svg>
-              </a>
-              <a href="https://www.linkedin.com/in/sabbir-ahmmed71/" target="_blank" rel="noopener noreferrer">
-                <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19.6 3h-15.2c-1.42 0-2.4.979-2.4 2.4v15.2c0 1.42.98 2.4 2.4 2.4h15.2c1.42 0 2.4-.98 2.4-2.4v-15.2c0-1.42-.98-2.4-2.4-2.4zm-11.334 16h-3v-8h3v8zm-1.5-9.35c-.967 0-1.75-.784-1.75-1.75 0-.967.783-1.75 1.75-1.75.967 0 1.75.783 1.75 1.75 0 .966-.783 1.75-1.75 1.75zm11.334 9.35h-3v-4.59c0-1.093-.396-1.84-1.386-1.84-.757 0-1.207.512-1.405 1.006-.073.175-.092.419-.092.664v4.76h-3v-8h3v1.09c.396-.611 1.103-1.407 2.686-1.407 1.959 0 3.395 1.28 3.395 4.026v4.291z" />
-                </svg>
-              </a>
-              <a href="https://github.com/sabbir347256" target="_blank" rel="noopener noreferrer">
-                <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.304 3.438 9.799 8.205 11.385.6.111.82-.26.82-.577v-2.165c-3.338.724-4.042-1.44-4.042-1.44-.546-1.387-1.334-1.756-1.334-1.756-1.09-.746.083-.73.083-.73 1.205.084 1.839 1.238 1.839 1.238 1.07 1.833 2.809 1.304 3.494.997.108-.775.419-1.305.762-1.605-2.665-.304-5.466-1.332-5.466-5.932 0-1.311.469-2.382 1.235-3.221-.124-.303-.535-1.526.117-3.179 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399 3.006-.405 1.021.006 2.049.139 3.006.405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.876.118 3.179.767.839 1.234 1.911 1.234 3.221 0 4.61-2.805 5.624-5.475 5.921.431.372.815 1.102.815 2.222v3.293c0 .319.217.693.824.575 4.765-1.589 8.2-6.085 8.2-11.387 0-6.627-5.373-12-12-12z" />
-                </svg>
-              </a>
-            </div>
+                <a href="https://web.facebook.com/profile.php?id=100021748580543" target="_blank" rel="noopener noreferrer">
+                  <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.733 0-1.325.593-1.325 1.325v21.351c0 .732.593 1.324 1.325 1.324h11.494v-9.294h-3.122v-3.622h3.122v-2.667c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.462.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.762v2.31h3.587l-.467 3.622h-3.12v9.293h6.117c.733 0 1.325-.593 1.325-1.325v-21.351c0-.732-.593-1.325-1.325-1.325z" />
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sabbir-ahmmed71/" target="_blank" rel="noopener noreferrer">
+                  <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.6 3h-15.2c-1.42 0-2.4.979-2.4 2.4v15.2c0 1.42.98 2.4 2.4 2.4h15.2c1.42 0 2.4-.98 2.4-2.4v-15.2c0-1.42-.98-2.4-2.4-2.4zm-11.334 16h-3v-8h3v8zm-1.5-9.35c-.967 0-1.75-.784-1.75-1.75 0-.967.783-1.75 1.75-1.75.967 0 1.75.783 1.75 1.75 0 .966-.783 1.75-1.75 1.75zm11.334 9.35h-3v-4.59c0-1.093-.396-1.84-1.386-1.84-.757 0-1.207.512-1.405 1.006-.073.175-.092.419-.092.664v4.76h-3v-8h3v1.09c.396-.611 1.103-1.407 2.686-1.407 1.959 0 3.395 1.28 3.395 4.026v4.291z" />
+                  </svg>
+                </a>
+                <a href="https://github.com/sabbir347256" target="_blank" rel="noopener noreferrer">
+                  <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.304 3.438 9.799 8.205 11.385.6.111.82-.26.82-.577v-2.165c-3.338.724-4.042-1.44-4.042-1.44-.546-1.387-1.334-1.756-1.334-1.756-1.09-.746.083-.73.083-.73 1.205.084 1.839 1.238 1.839 1.238 1.07 1.833 2.809 1.304 3.494.997.108-.775.419-1.305.762-1.605-2.665-.304-5.466-1.332-5.466-5.932 0-1.311.469-2.382 1.235-3.221-.124-.303-.535-1.526.117-3.179 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399 3.006-.405 1.021.006 2.049.139 3.006.405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.876.118 3.179.767.839 1.234 1.911 1.234 3.221 0 4.61-2.805 5.624-5.475 5.921.431.372.815 1.102.815 2.222v3.293c0 .319.217.693.824.575 4.765-1.589 8.2-6.085 8.2-11.387 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </section>
