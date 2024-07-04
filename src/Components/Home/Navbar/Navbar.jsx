@@ -32,6 +32,16 @@ const Navbar = () => {
     loop: false,
     onLoopDone: () => console.log(`loop completed after 3 runs.`)
   })
+  const [skill] = useTypewriter({
+    words: ['ReactJs Expert', 'MongoDB Expert', 'Javascript Expert'],
+    loop: false,
+    onLoopDone: () => console.log(`loop completed after 3 runs.`)
+  })
+  const [projects] = useTypewriter({
+    words: ['Dream Travel', 'Online Group Study', 'MY-Inbox'],
+    loop: false,
+    onLoopDone: () => console.log(`loop completed after 3 runs.`)
+  })
   return (
     <div>
       <nav className="bg-black fixed w-full top-0 z-50 shadow-lg robotoFont">
@@ -227,6 +237,7 @@ const Navbar = () => {
         </section>
         <section id="skill" className="lg:min-h-screen bg-black soraFont flex flex-col items-center justify-center gap-6 pt-10 lg:pt-0 px-5">
           <div className="text-center flex flex-col gap-4">
+            <span>I'm <span className="text-green-500 font-semibold">{skill}</span></span>
             <h1 className="text-4xl font-bold text-white">My Skills</h1>
             <p>I put your ideas and thus your wishes in the form of a unique web project <br /> that inspires you and you customers.</p>
           </div>
@@ -267,15 +278,16 @@ const Navbar = () => {
         </section>
 
         <section id="projects" className="lg:min-h-screen bg-[#0f0716] px-5 lg:px-24  flex flex-col justify-center items-center pt-20 pb-10">
+          <h1 className="mb-2">Here project <span className="text-green-500 font-semibold robotoFont">{projects}</span></h1>
           <h1 className="text-4xl font-bold text-white robotoFont">My Projects</h1>
           <div className="grid grid-cols-1 lg:grid-cols-6 justify-center pt-20">
-            <NavLink className="lg:col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
+            <NavLink data-aos="zoom-in-up" data-aos-duration='1500' className="lg:col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
               <img className="h-[610px] w-screen" src={project1} alt="" />
             </NavLink>
             <div className="lg:col-span-1 flex items-center mt-16 hidden lg:block">
               <img className="h-[500px]" src={verticleImage} alt="" />
             </div>
-            <div className="lg:col-span-3 flex flex-col gap-3 mt-6 lg:mt-0">
+            <div className="lg:col-span-3 flex flex-col gap-3 mt-6 lg:mt-0" data-aos="flip-left" data-aos-duration='1500'>
               <h2 className="text-2xl font-bold text-gray-200 robotoFont">Tourism Project</h2>
               <h2>Name : <span className="text-xl font-bold robotoFont"> DREAM TRAVEL</span></h2>
               <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">It's a show all tourist place site projcet. Here all user see all famous tourist place in the world. Also know all kinds of information for all place. Any user choose any tourist place then user click view details button and user see all kind of information for this place.</span></h2>
@@ -290,7 +302,7 @@ const Navbar = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-6 justify-center pt-20">
-            <div className="lg:col-span-3 flex flex-col gap-3">
+            <div className="lg:col-span-3 flex flex-col gap-3" data-aos="flip-right" data-aos-duration='1500'>
               <h2 className="text-2xl font-bold text-gray-200 robotoFont">Study Project</h2>
               <h2>Name : <span className="text-xl font-bold robotoFont"> Online Group Study</span></h2>
               <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">Basically it's a assignment related web project. Here any user add any kind of assignment. This assignment show home page and all assignment section. Any user take whatever assignment he likes according to his needs. All the assignments the user takes will be displayed on his profile.</span></h2>
@@ -301,23 +313,23 @@ const Navbar = () => {
               </h2>
               <h2 className="text-white"><span className="robotoFont">Live link</span> : <NavLink to='https://online-group-study-67ed0.web.app' className="text-blue-500">https://online-group-study-67ed0.web.app/</NavLink> </h2>
               <h2 className="text-white"><span className="robotoFont">Client site github link</span> : <NavLink to='https://github.com/sabbir347256/Dream-Travel-tourism-agency' className='text-blue-500'>https://github.com/sabbir347256/Online-Group-Study</NavLink></h2>
-              <h2 className="text-white"><span className="robotoFont">Server site github link</span> : <NavLink to='https://github.com/sabbir347256/Dream-Travel-server-site' className='text-blue-500'>https://github.com/sabbir347256/Online-Group-Study-Server-site</NavLink> </h2>
+              <h2 className="text-white"><span className="robotoFont">Server site github link</span> : <NavLink  to='https://github.com/sabbir347256/Dream-Travel-server-site' className='text-blue-500'>https://github.com/sabbir347256/Online-Group-Study-Server-site</NavLink> </h2>
             </div>
             <div className="lg:col-span-1 flex items-center mt-16 hidden lg:block">
               <img className="h-[500px]" src={verticleImage} alt="" />
             </div>
-            <NavLink className="lg:col-span-2" to='https://online-group-study-67ed0.web.app/'>
+            <NavLink data-aos="zoom-in-up" data-aos-duration='1500' className="lg:col-span-2" to='https://online-group-study-67ed0.web.app/'>
               <img className="h-[610px] w-screen" src={project2} alt="" />
             </NavLink>
           </div>
           <div className="flex flex-col-reverse lg:flex-row lg:grid grid-cols-1 lg:grid-cols-6 justify-center pt-20 ">
-            <NavLink className="lg:col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
+            <NavLink data-aos="zoom-in-up" data-aos-duration='1500' className="lg:col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
               <img className="h-[610px] w-screen" src={project3} alt="" />
             </NavLink>
             <div className="lg:col-span-1 flex items-center mt-16 hidden lg:block">
               <img className="h-[500px]" src={verticleImage} alt="" />
             </div>
-            <div className="lg:col-span-3 flex flex-col gap-3">
+            <div className="lg:col-span-3 flex flex-col gap-3" data-aos="flip-left" data-aos-duration='1500'>
               <h2 className="text-2xl font-bold text-gray-200 robotoFont">Blog Project</h2>
               <h2>Name : <span className="text-xl font-bold robotoFont"> MY Inbox</span></h2>
               <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">Basically it is a blog site project. Any user can post any kind of educational or tourist blog in this project. Users can also comment and report on any blog. And if the user wants to post the blogs,they can also delete then.</span></h2>
