@@ -11,7 +11,6 @@
 .soraFont {
     font-family: "Sora", sans-serif;
 }
-
 .playfairFont {
     font-family: "Playfair Display", serif;
 }
@@ -28,6 +27,8 @@ html {
     scroll-behavior: smooth;
 }
 
-.navbg {
-    background-image: url(./image/profile.jpg);
+.bodyBg {
+    background-image: url(./image/backgroudImag.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

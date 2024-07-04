@@ -14,6 +14,8 @@ import mongodb from '../../../image/mongodb.png'
 import project1 from '../../../image/projcet1.png'
 import verticleImage from '../../../image/verticle.jpeg'
 import { NavLink } from "react-router-dom";
+import project2 from '../../../image/project2.png'
+import project3 from '../../../image/project3.png'
 
 // 0d0d0d
 // 151515
@@ -202,7 +204,7 @@ const Navbar = () => {
           </div>
           <img className="h-[450px] lg:h-[500px] w-[300px] lg:w-[350px] bg-black" src={profile} alt="" />
         </section>
-        <section id="about" className="lg:min-h-screen bg-[#202020] flex lg:flex-row-reverse  items-center lg:items-start justify-start lg:justify-end flex-col lg:px-24 gap-6 lg:gap-36 pt-20">
+        <section id="about" className="lg:min-h-screen bg-[#0f0716] flex lg:flex-row-reverse  items-center lg:items-start justify-start lg:justify-end flex-col lg:px-24 gap-6 lg:gap-36 pt-20">
           <div className="px-5 flex flex-col items-start lg:h-screen gap-8 lg:pt-20">
             <h1 className="text-4xl text-white font-bold robotoFont">About Me</h1>
             <p className="text-gray-400 playwriteFont">I am Sabbir Ahmmed, a passionate MERN stack web developer. I am currently pursuing my HSC at Govt. Science College, Dhaka, and a BSc in CSE (3rd year) at Green University of Bangladesh. My expertise includes HTML, CSS, Tailwind CSS, JavaScript, ReactJS, NodeJS, ExpressJS, and MongoDB. I enjoy creating dynamic and responsive web applications and am always eager to learn and take on new challenges. Let's connect to discuss potential projects and ideas!</p>
@@ -250,52 +252,71 @@ const Navbar = () => {
           </div>
         </section>
 
-        <section id="projects" className="lg:min-h-screen bg-[#202020] px-5 lg:px-44 flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold text-white">My Projects</h1>
-          <div className="grid grid-cols-6 justify-center pt-20">
-            <NavLink className="col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
-              <img className="h-[330px]" src={project1} alt="" />
+        <section id="projects" className="lg:min-h-screen bg-[#0f0716] px-5 lg:px-24  flex flex-col justify-center items-center pt-20 pb-10">
+          <h1 className="text-4xl font-bold text-white robotoFont">My Projects</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-6 justify-center pt-20">
+            <NavLink className="lg:col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
+              <img className="h-[610px] w-screen" src={project1} alt="" />
             </NavLink>
-            <div className="col-span-1 flex items-center">
-              <img src={verticleImage} alt="" />
+            <div className="lg:col-span-1 flex items-center mt-16 hidden lg:block">
+              <img className="h-[500px]" src={verticleImage} alt="" />
             </div>
-            <div className="col-span-3">
-              <h2>Tourism Project</h2>
-              <h2>Name : DREAM TRAVEL</h2>
-              <h2>Description : It's a show all tourist place site projcet. Here all user see all famous tourist place in the world. Also know all kinds of information for all place. Any user choose any tourist place then user click view details button and user see all kind of information for this place.</h2>
+            <div className="lg:col-span-3 flex flex-col gap-3">
+              <h2 className="text-2xl font-bold text-gray-200 robotoFont">Tourism Project</h2>
+              <h2>Name : <span className="text-xl font-bold robotoFont"> DREAM TRAVEL</span></h2>
+              <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">It's a show all tourist place site projcet. Here all user see all famous tourist place in the world. Also know all kinds of information for all place. Any user choose any tourist place then user click view details button and user see all kind of information for this place.</span></h2>
               <h2>
-                Feature : <br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of place. <br />
-                2. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark.
+                <span className="font-bold text-gray-300 robotoFont">Feature</span> : <span className="playwriteFont"><br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of place. <br />
+                  2. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark.</span>
               </h2>
+              <h2 className="text-white"><span className="robotoFont">Live link</span> : <NavLink to='https://dreamtraveltourismagency.netlify.app' className="text-blue-500">https://dreamtraveltourismagency.netlify.app</NavLink> </h2>
+              <h2 className="text-white"><span className="robotoFont">Client site github link</span> : <NavLink to='https://github.com/sabbir347256/Dream-Travel-tourism-agency' className='text-blue-500'>https://github.com/sabbir347256/Dream-Travel-tourism-agency</NavLink></h2>
+              <h2 className="text-white"><span className="robotoFont">Server site github link</span> : <NavLink to='https://github.com/sabbir347256/Dream-Travel-server-site' className='text-blue-500'>https://github.com/sabbir347256/Dream-Travel-server-site</NavLink> </h2>
             </div>
           </div>
-          <div className="grid grid-cols-6 justify-center pt-20">
-
-            <div className="col-span-3">
-              <h2>Tourism Project</h2>
-              <h2>Name : DREAM TRAVEL</h2>
-              <h2>Description : It's a show all tourist place site projcet. Here all user see all famous tourist place in the world. Also know all kinds of information for all place. Any user choose any tourist place then user click view details button and user see all kind of information for this place.</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-6 justify-center pt-20">
+            <div className="lg:col-span-3 flex flex-col gap-3">
+              <h2 className="text-2xl font-bold text-gray-200 robotoFont">Study Project</h2>
+              <h2>Name : <span className="text-xl font-bold robotoFont"> Online Group Study</span></h2>
+              <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">Basically it's a assignment related web project. Here any user add any kind of assignment. This assignment show home page and all assignment section. Any user take whatever assignment he likes according to his needs. All the assignments the user takes will be displayed on his profile.</span></h2>
               <h2>
-                Feature : <br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of place. <br />
-                2. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark.
+                <span className="font-bold text-gray-300 robotoFont">Feature</span> : <span className="playwriteFont"><br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of assignment. <br />
+                  2. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark. <br /></span>
+                3. I will implement payment method system. This method is stripe payment mathod.Any user can pay for any assignment for this method.
               </h2>
+              <h2 className="text-white"><span className="robotoFont">Live link</span> : <NavLink to='https://online-group-study-67ed0.web.app' className="text-blue-500">https://online-group-study-67ed0.web.app/</NavLink> </h2>
+              <h2 className="text-white"><span className="robotoFont">Client site github link</span> : <NavLink to='https://github.com/sabbir347256/Dream-Travel-tourism-agency' className='text-blue-500'>https://github.com/sabbir347256/Online-Group-Study</NavLink></h2>
+              <h2 className="text-white"><span className="robotoFont">Server site github link</span> : <NavLink to='https://github.com/sabbir347256/Dream-Travel-server-site' className='text-blue-500'>https://github.com/sabbir347256/Online-Group-Study-Server-site</NavLink> </h2>
             </div>
-            <div className="col-span-1 flex items-center">
-              <img src={verticleImage} alt="" />
+            <div className="lg:col-span-1 flex items-center mt-16 hidden lg:block">
+              <img className="h-[500px]" src={verticleImage} alt="" />
             </div>
-            <NavLink className="col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
-              <img className="h-[330px]" src={project1} alt="" />
+            <NavLink className="lg:col-span-2" to='https://online-group-study-67ed0.web.app/'>
+              <img className="h-[610px] w-screen" src={project2} alt="" />
             </NavLink>
           </div>
-          <div>
-
-          </div>
-          <div>
-
+          <div className="flex flex-col-reverse lg:flex-row lg:grid grid-cols-1 lg:grid-cols-6 justify-center pt-20 ">
+            <NavLink className="lg:col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
+              <img className="h-[610px] w-screen" src={project3} alt="" />
+            </NavLink>
+            <div className="lg:col-span-1 flex items-center mt-16 hidden lg:block">
+              <img className="h-[500px]" src={verticleImage} alt="" />
+            </div>
+            <div className="lg:col-span-3 flex flex-col gap-3">
+              <h2 className="text-2xl font-bold text-gray-200 robotoFont">Blog Project</h2>
+              <h2>Name : <span className="text-xl font-bold robotoFont"> MY Inbox</span></h2>
+              <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">Basically it is a blog site project. Any user can post any kind of educational or tourist blog in this project. Users can also comment and report on any blog. And if the user wants to post the blogs,they can also delete then.</span></h2>
+              <h2>
+                <span className="font-bold text-gray-300 robotoFont">Feature</span> : <span className="playwriteFont"><br />1.The main feature of this project is the Admin Panel.Admin can control all users through admin panel. Any comment, report deletion and feedback can be given. In short, an admin can control the entire site through the admin panel. <br /> 2. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of blog. <br />
+                  3. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark.</span>
+              </h2>
+              <h2 className="text-white"><span className="robotoFont">Live link</span> : <NavLink to=' https://my-inbox-c638f.web.app/' className="text-blue-500"> https://my-inbox-c638f.web.app/</NavLink> </h2>
+              <h2 className="text-white"><span className="robotoFont">Client site github link</span> : <NavLink to='https://github.com/sabbir347256/MY-Inbox-' className='text-blue-500'>https://github.com/sabbir347256/MY-Inbox-</NavLink></h2>
+              <h2 className="text-white"><span className="robotoFont">Server site github link</span> : <NavLink to='https://github.com/sabbir347256/My-inbox-Server-Site' className='text-blue-500'>https://github.com/sabbir347256/My-inbox-Server-Site</NavLink> </h2>
+            </div>
           </div>
         </section>
-
-        <section id="education" className="lg:min-h-screen bg-[#202020] flex md:flex-row  lg:flex-row items-center lg:items-start flex-col lg:px-24 gap-6 justify-center lg:gap-[20rem] pt-5 px-5">
+        <section id="education" className="lg:min-h-screen bg-black flex md:flex-row  lg:flex-row items-center lg:items-start flex-col lg:px-24 gap-6 justify-center lg:gap-[20rem] lg:py-20 pt-5 px-5">
           <div className="lg:w-screen flex flex-col gap-4">
             <h1 className="text-4xl text-white font-bold robotoFont">My Education</h1>
             <div className="border-2 border-gray-600 flex flex-col gap-3 p-4 rounded-xl bg-[#140b1c] playfairFont text-[#764bf5] hover:bg-[#382263] duration-700 hover:text-white">
@@ -316,8 +337,83 @@ const Navbar = () => {
           </div>
           <img className="pb-4 lg:pb-0 md:mt-14 h-[500px]" src={education} alt="" />
         </section>
-        <section id="contact" className="lg:min-h-screen bg-[#202020]">
-          <h1 className="text-4xl font-bold">Contact Me</h1>
+        <section id="contact" className="lg:min-h-screen bg-[#0f0716]">
+          <div className="min-h-screen flex flex-col md:flex-row bg-[#0f0716] text-white">
+            {/* First Section: Send Message Form */}
+            <div className="flex-1 p-8 flex flex-col justify-center items-center">
+              {/* Heading and Paragraph */}
+              <div className="mb-6 lg:px-16">
+                <h2 className="text-3xl font-bold mb-2 text-[#764bf5]">Get in Touch</h2>
+                <p className="text-gray-300">We'd love to hear from you. Please fill out the form below and we'll get in touch with you as soon as possible.</p>
+              </div>
+
+              <form className="space-y-6 w-full max-w-md">
+                {/* First Name and Last Name */}
+                <div className="flex flex-col md:flex-row gap-4">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    className="flex-1 p-2 rounded bg-gray-800 border border-gray-700"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    className="flex-1 p-2 rounded bg-gray-800 border border-gray-700"
+                  />
+                </div>
+
+                {/* Email and Phone Number */}
+                <div className="flex flex-col md:flex-row gap-4">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="flex-1 p-2 rounded bg-gray-800 border border-gray-700"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    className="flex-1 p-2 rounded bg-gray-800 border border-gray-700"
+                  />
+                </div>
+
+                {/* Message */}
+                <textarea
+                  placeholder="Your Message"
+                  className="w-full p-2 rounded bg-gray-800 border border-gray-700 h-32"
+                ></textarea>
+
+                {/* Send Message Button */}
+                <button
+                  type="submit"
+                  className="w-full p-2 rounded bg-purple-600 hover:bg-purple-700"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            {/* Second Section: Contact Information */}
+            <div className="flex-1 bg-black p-8 flex flex-col justify-center ">
+              <div className="flex items-center mb-4">
+                <svg className="w-6 h-6 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h18v2H3v-2zm0 4h18v2H3v-2z" />
+                </svg>
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div className="flex items-center mb-4">
+                <svg className="w-6 h-6 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h18v2H3v-2zm0 4h18v2H3v-2z" />
+                </svg>
+                <span>email@example.com</span>
+              </div>
+              <div className="flex items-center mb-4">
+                <svg className="w-6 h-6 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h18v2H3v-2zm0 4h18v2H3v-2z" />
+                </svg>
+                <span>1234 Address St, City, Country</span>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
