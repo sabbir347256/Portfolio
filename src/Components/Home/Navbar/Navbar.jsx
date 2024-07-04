@@ -11,7 +11,9 @@ import react from '../../../image/reactjs.png'
 import node from '../../../image/nodejs.png'
 import express from '../../../image/express.png'
 import mongodb from '../../../image/mongodb.png'
-
+import project1 from '../../../image/projcet1.png'
+import verticleImage from '../../../image/verticle.jpeg'
+import { NavLink } from "react-router-dom";
 
 // 0d0d0d
 // 151515
@@ -75,19 +77,19 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#education"
+                href="#projects"
                 className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-red-300 duration-500"
               >
-                My Education
+                Projects
                 <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
               </a>
             </li>
             <li>
               <a
-                href="#projects"
+                href="#education"
                 className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-red-300 duration-500"
               >
-                Projects
+                My Education
                 <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
               </a>
             </li>
@@ -160,21 +162,21 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#education"
-                className="text-white relative group cursor-pointer block py-2 lg:py-0"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                My Education
-                <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
-              </a>
-            </li>
-            <li>
-              <a
                 to="#projects"
                 className="text-white relative group cursor-pointer block py-2 lg:py-0"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Projects
+                <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#education"
+                className="text-white relative group cursor-pointer block py-2 lg:py-0"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                My Education
                 <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
               </a>
             </li>
@@ -247,6 +249,52 @@ const Navbar = () => {
             </div>
           </div>
         </section>
+
+        <section id="projects" className="lg:min-h-screen bg-[#202020] px-5 lg:px-44 flex flex-col justify-center items-center">
+          <h1 className="text-4xl font-bold text-white">My Projects</h1>
+          <div className="grid grid-cols-6 justify-center pt-20">
+            <NavLink className="col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
+              <img className="h-[330px]" src={project1} alt="" />
+            </NavLink>
+            <div className="col-span-1 flex items-center">
+              <img src={verticleImage} alt="" />
+            </div>
+            <div className="col-span-3">
+              <h2>Tourism Project</h2>
+              <h2>Name : DREAM TRAVEL</h2>
+              <h2>Description : It's a show all tourist place site projcet. Here all user see all famous tourist place in the world. Also know all kinds of information for all place. Any user choose any tourist place then user click view details button and user see all kind of information for this place.</h2>
+              <h2>
+                Feature : <br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of place. <br />
+                2. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark.
+              </h2>
+            </div>
+          </div>
+          <div className="grid grid-cols-6 justify-center pt-20">
+
+            <div className="col-span-3">
+              <h2>Tourism Project</h2>
+              <h2>Name : DREAM TRAVEL</h2>
+              <h2>Description : It's a show all tourist place site projcet. Here all user see all famous tourist place in the world. Also know all kinds of information for all place. Any user choose any tourist place then user click view details button and user see all kind of information for this place.</h2>
+              <h2>
+                Feature : <br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of place. <br />
+                2. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark.
+              </h2>
+            </div>
+            <div className="col-span-1 flex items-center">
+              <img src={verticleImage} alt="" />
+            </div>
+            <NavLink className="col-span-2" to='https://dreamtraveltourismagency.netlify.app/'>
+              <img className="h-[330px]" src={project1} alt="" />
+            </NavLink>
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+        </section>
+
         <section id="education" className="lg:min-h-screen bg-[#202020] flex md:flex-row  lg:flex-row items-center lg:items-start flex-col lg:px-24 gap-6 justify-center lg:gap-[20rem] pt-5 px-5">
           <div className="lg:w-screen flex flex-col gap-4">
             <h1 className="text-4xl text-white font-bold robotoFont">My Education</h1>
@@ -267,10 +315,6 @@ const Navbar = () => {
             </div>
           </div>
           <img className="pb-4 lg:pb-0 md:mt-14 h-[500px]" src={education} alt="" />
-        </section>
-
-        <section id="contact" className="lg:min-h-screen bg-[#202020]">
-          <h1 className="text-4xl font-bold">Contact Me</h1>
         </section>
         <section id="contact" className="lg:min-h-screen bg-[#202020]">
           <h1 className="text-4xl font-bold">Contact Me</h1>
