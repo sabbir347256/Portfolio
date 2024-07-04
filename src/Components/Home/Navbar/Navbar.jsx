@@ -20,12 +20,18 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import logo1 from '../../../image/logo.png'
+import { useTypewriter } from "react-simple-typewriter";
 
 
 // 0d0d0d
 // 151515
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [text] = useTypewriter({
+    words: ['Web Developer', 'Frontend Developer', 'MERN Stack Developer'],
+    loop: 3,
+    onLoopDone: () => console.log(`loop completed after 3 runs.`)
+  })
   return (
     <div>
       <nav className="bg-black fixed w-full top-0 z-50 shadow-lg px-8 robotoFont">
@@ -58,55 +64,55 @@ const Navbar = () => {
             <li>
               <a
                 href="#home"
-                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-red-300 duration-500"
+                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-green-400 duration-500"
               >
                 Home
-                <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
+                <span className="block h-1 bg-transparent group-hover:bg-green-400 transition-all duration-300"></span>
               </a>
             </li>
             <li>
               <a
                 href="#about"
-                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-red-300 duration-500"
+                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-green-400 duration-500"
               >
                 About Me
-                <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
+                <span className="block h-1 bg-transparent group-hover:bg-gray-400 transition-all duration-300"></span>
               </a>
             </li>
             <li>
               <a
                 href="#skill"
-                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-red-300 duration-500"
+                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-green-400 duration-500"
               >
                 My Skill
-                <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
+                <span className="block h-1 bg-transparent group-hover:bg-gray-400 transition-all duration-300"></span>
               </a>
             </li>
             <li>
               <a
                 href="#projects"
-                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-red-300 duration-500"
+                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-green-400 duration-500"
               >
                 Projects
-                <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
+                <span className="block h-1 bg-transparent group-hover:bg-gray-400 transition-all duration-300"></span>
               </a>
             </li>
             <li>
               <a
                 href="#education"
-                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-red-300 duration-500"
+                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-green-400 duration-500"
               >
                 My Education
-                <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
+                <span className="block h-1 bg-transparent group-hover:bg-gray-400 transition-all duration-300"></span>
               </a>
             </li>
             <li>
               <a
                 href="#contact"
-                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-red-300 duration-500"
+                className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-green-400 duration-500"
               >
                 Contact Me
-                <span className="block h-1 bg-transparent group-hover:bg-yellow-400 transition-all duration-300"></span>
+                <span className="block h-1 bg-transparent group-hover:bg-gray-400 transition-all duration-300"></span>
               </a>
             </li>
           </ul>
@@ -202,11 +208,11 @@ const Navbar = () => {
       </nav>
       <div className="bg-black">
         <section id="home" className="lg:min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 pb-5 lg:pb-0 lg:gap-96 pt-32 px-5">
-          <div className="flex flex-col gap-6 robotoFont">
-            <h1 className="text-4xl font-bold text-white">I AM</h1>
-            <h2 className="text-4xl font-bold text-white">SABBIR AHMMED</h2>
-            <h2 className="text-4xl font-bold text-white">MERN Stack Developer</h2>
-            <button className="btn w-32">
+          <div className="flex flex-col gap-3 robotoFont w-full ">
+            <h1 className="text-lg font-bold text-gray-300 libreFont">I'm Sabbir Ahmmed</h1>
+            <h2 className="text-lg font-bold text-white"></h2>
+            <h2 className="text-6xl font-bold text-white">Hi,I'm <span className="text-green-500">{text}</span></h2>
+            <button className="btn w-32 bg-primary text-white">
               <a href="../../../image/Untitled document.pdf" download='resume.pdf' target="blank">Download CV</a>
             </button>
           </div>
@@ -347,7 +353,7 @@ const Navbar = () => {
           <img className="pb-4 lg:pb-0 md:mt-14 h-[500px]" src={education} alt="" />
         </section>
         <section id="contact" className="lg:min-h-screen bg-[#0f0716] lg:mx-5">
-          <div className="min-h-screen flex flex-col md:flex-row bg-[#0f0716] text-white">
+          <div className="min-h-screen flex flex-col md:flex-row items-center  bg-[#0f0716] text-white">
             {/* First Section: Send Message Form */}
             <div className="flex-1 p-6 flex flex-col justify-center items-center">
               {/* Heading and Paragraph */}
@@ -402,7 +408,7 @@ const Navbar = () => {
             </div>
 
             {/* Second Section: Contact Information */}
-            <div className="flex-1 bg-black p-8 flex flex-col justify-center lg:relative lg:left-20 ">
+            <div className="flex-1 bg-black p-8 flex flex-col justify-center rounded-2xl lg:mr-5">
               <div className="flex items-center mb-4 gap-4">
                 <FaPhoneVolume className="bg-[#764bf5] text-gray-200 size-12 p-2 rounded-full"></FaPhoneVolume>
                 <div className="libreFont">
@@ -427,6 +433,23 @@ const Navbar = () => {
                   <span>Gaochiya,Narayanganj <br />Dhaka,Bangladesh</span>
                 </div>
               </div>
+              <div className="flex space-x-4 ml-3 mb-4 md:mb-0">
+              <a href="https://web.facebook.com/profile.php?id=100021748580543" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.675 0h-21.35c-.733 0-1.325.593-1.325 1.325v21.351c0 .732.593 1.324 1.325 1.324h11.494v-9.294h-3.122v-3.622h3.122v-2.667c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.462.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.762v2.31h3.587l-.467 3.622h-3.12v9.293h6.117c.733 0 1.325-.593 1.325-1.325v-21.351c0-.732-.593-1.325-1.325-1.325z" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/sabbir-ahmmed71/" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19.6 3h-15.2c-1.42 0-2.4.979-2.4 2.4v15.2c0 1.42.98 2.4 2.4 2.4h15.2c1.42 0 2.4-.98 2.4-2.4v-15.2c0-1.42-.98-2.4-2.4-2.4zm-11.334 16h-3v-8h3v8zm-1.5-9.35c-.967 0-1.75-.784-1.75-1.75 0-.967.783-1.75 1.75-1.75.967 0 1.75.783 1.75 1.75 0 .966-.783 1.75-1.75 1.75zm11.334 9.35h-3v-4.59c0-1.093-.396-1.84-1.386-1.84-.757 0-1.207.512-1.405 1.006-.073.175-.092.419-.092.664v4.76h-3v-8h3v1.09c.396-.611 1.103-1.407 2.686-1.407 1.959 0 3.395 1.28 3.395 4.026v4.291z" />
+                </svg>
+              </a>
+              <a href="https://github.com/sabbir347256" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.304 3.438 9.799 8.205 11.385.6.111.82-.26.82-.577v-2.165c-3.338.724-4.042-1.44-4.042-1.44-.546-1.387-1.334-1.756-1.334-1.756-1.09-.746.083-.73.083-.73 1.205.084 1.839 1.238 1.839 1.238 1.07 1.833 2.809 1.304 3.494.997.108-.775.419-1.305.762-1.605-2.665-.304-5.466-1.332-5.466-5.932 0-1.311.469-2.382 1.235-3.221-.124-.303-.535-1.526.117-3.179 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399 3.006-.405 1.021.006 2.049.139 3.006.405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.876.118 3.179.767.839 1.234 1.911 1.234 3.221 0 4.61-2.805 5.624-5.475 5.921.431.372.815 1.102.815 2.222v3.293c0 .319.217.693.824.575 4.765-1.589 8.2-6.085 8.2-11.387 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
             </div>
           </div>
         </section>
@@ -450,17 +473,17 @@ const Navbar = () => {
 
             {/* Social Icons */}
             <div className="flex space-x-4 mb-4 md:mb-0">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://web.facebook.com/profile.php?id=100021748580543" target="_blank" rel="noopener noreferrer">
                 <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M22.675 0h-21.35c-.733 0-1.325.593-1.325 1.325v21.351c0 .732.593 1.324 1.325 1.324h11.494v-9.294h-3.122v-3.622h3.122v-2.667c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.462.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.762v2.31h3.587l-.467 3.622h-3.12v9.293h6.117c.733 0 1.325-.593 1.325-1.325v-21.351c0-.732-.593-1.325-1.325-1.325z" />
                 </svg>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/sabbir-ahmmed71/" target="_blank" rel="noopener noreferrer">
                 <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19.6 3h-15.2c-1.42 0-2.4.979-2.4 2.4v15.2c0 1.42.98 2.4 2.4 2.4h15.2c1.42 0 2.4-.98 2.4-2.4v-15.2c0-1.42-.98-2.4-2.4-2.4zm-11.334 16h-3v-8h3v8zm-1.5-9.35c-.967 0-1.75-.784-1.75-1.75 0-.967.783-1.75 1.75-1.75.967 0 1.75.783 1.75 1.75 0 .966-.783 1.75-1.75 1.75zm11.334 9.35h-3v-4.59c0-1.093-.396-1.84-1.386-1.84-.757 0-1.207.512-1.405 1.006-.073.175-.092.419-.092.664v4.76h-3v-8h3v1.09c.396-.611 1.103-1.407 2.686-1.407 1.959 0 3.395 1.28 3.395 4.026v4.291z" />
                 </svg>
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/sabbir347256" target="_blank" rel="noopener noreferrer">
                 <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.304 3.438 9.799 8.205 11.385.6.111.82-.26.82-.577v-2.165c-3.338.724-4.042-1.44-4.042-1.44-.546-1.387-1.334-1.756-1.334-1.756-1.09-.746.083-.73.083-.73 1.205.084 1.839 1.238 1.839 1.238 1.07 1.833 2.809 1.304 3.494.997.108-.775.419-1.305.762-1.605-2.665-.304-5.466-1.332-5.466-5.932 0-1.311.469-2.382 1.235-3.221-.124-.303-.535-1.526.117-3.179 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399 3.006-.405 1.021.006 2.049.139 3.006.405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.876.118 3.179.767.839 1.234 1.911 1.234 3.221 0 4.61-2.805 5.624-5.475 5.921.431.372.815 1.102.815 2.222v3.293c0 .319.217.693.824.575 4.765-1.589 8.2-6.085 8.2-11.387 0-6.627-5.373-12-12-12z" />
                 </svg>
