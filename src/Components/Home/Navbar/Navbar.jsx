@@ -213,7 +213,7 @@ const Navbar = () => {
             <h2 className="text-lg font-bold text-white"></h2>
             <h2 className="text-6xl font-bold text-white">Hi,I'm <span className="text-green-500">{text}</span></h2>
             <button className="btn w-32 bg-primary text-white">
-              <a href="../../../image/Untitled document.pdf" download='resume.pdf' target="blank">Download CV</a>
+              <a href="CV.pdf" download='resume.pdf' target="blank">Download CV</a>
             </button>
           </div>
           <img className="h-[450px] lg:h-[500px] w-[300px] lg:w-[350px] bg-black lg:mt-4" src={profile} alt="" />
