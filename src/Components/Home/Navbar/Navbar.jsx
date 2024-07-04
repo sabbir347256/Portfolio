@@ -100,7 +100,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#projects"
+                href="#project"
                 className="text-white relative group cursor-pointer block py-2 lg:py-0 hover:text-green-400 duration-500"
               >
                 Projects
@@ -185,7 +185,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                to="#projects"
+                href="#project"
                 className="text-white relative group cursor-pointer block py-2 lg:py-0"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -239,45 +239,45 @@ const Navbar = () => {
           <div className="text-center flex flex-col gap-4">
             <span>I'm <span className="text-green-500 font-semibold">{skill}</span></span>
             <h1 className="text-4xl font-bold text-white">My Skills</h1>
-            <p>I put your ideas and thus your wishes in the form of a unique web project <br /> that inspires you and you customers.</p>
+            <p className="text-gray-400">I put your ideas and thus your wishes in the form of a unique web project <br /> that inspires you and you customers.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 justify-center gap-6 p-4">
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
+            <div className="border-2 text-gray-400 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
               <img className="h-16" src={html} alt="" />
               <p>HTML</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
+            <div className="border-2 text-gray-400 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
               <img className="h-16" src={css} alt="" />
               <p>CSS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
+            <div className="border-2 text-gray-400 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
               <img className="h-16" src={tailwind} alt="" />
               <p>TAILWIND CSS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
+            <div className="border-2 text-gray-400 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
               <img className="h-16" src={js} alt="" />
               <p>JAVASCRIPT</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
+            <div className="border-2 text-gray-400 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
               <img className="h-16" src={react} alt="" />
               <p>REACTJS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
+            <div className="border-2 text-gray-400 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
               <img className="h-16" src={node} alt="" />
               <p>NODEJS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
+            <div className="border-2 text-gray-400 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
               <img className="h-16" src={express} alt="" />
               <p>NODEJS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
+            <div className="border-2 text-gray-400 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
               <img className="h-16" src={mongodb} alt="" />
               <p>MONGODB</p>
             </div>
           </div>
         </section>
 
-        <section id="projects" className="lg:min-h-screen bg-[#0f0716] px-5 lg:px-24  flex flex-col justify-center items-center pt-20 pb-10">
+        <section id="project" className="lg:min-h-screen bg-[#0f0716] px-5 lg:px-24  flex flex-col justify-center items-center pt-20 pb-10">
           <h1 className="mb-2">Here project <span className="text-green-500 font-semibold robotoFont">{projects}</span></h1>
           <h1 className="text-4xl font-bold text-white robotoFont">My Projects</h1>
           <div className="grid grid-cols-1 lg:grid-cols-6 justify-center pt-20">
@@ -290,9 +290,9 @@ const Navbar = () => {
             <div className="lg:col-span-3 flex flex-col gap-3 mt-6 lg:mt-0" data-aos="flip-left" data-aos-duration='1500'>
               <h2 className="text-2xl font-bold text-gray-200 robotoFont">Tourism Project</h2>
               <h2>Name : <span className="text-xl font-bold robotoFont"> DREAM TRAVEL</span></h2>
-              <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">It's a show all tourist place site projcet. Here all user see all famous tourist place in the world. Also know all kinds of information for all place. Any user choose any tourist place then user click view details button and user see all kind of information for this place.</span></h2>
+              <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont text-gray-400">It's a show all tourist place site projcet. Here all user see all famous tourist place in the world. Also know all kinds of information for all place. Any user choose any tourist place then user click view details button and user see all kind of information for this place.</span></h2>
               <h2>
-                <span className="font-bold text-gray-300 robotoFont">Feature</span> : <span className="playwriteFont"><br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of place. <br />
+                <span className="font-bold text-gray-300 robotoFont">Feature</span> : <span className="playwriteFont text-gray-400"><br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of place. <br />
                   2. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark.</span>
               </h2>
               <h2 className="text-white"><span className="robotoFont">Live link</span> : <NavLink to='https://dreamtraveltourismagency.netlify.app' className="text-blue-500">https://dreamtraveltourismagency.netlify.app</NavLink> </h2>
@@ -305,9 +305,9 @@ const Navbar = () => {
             <div className="lg:col-span-3 flex flex-col gap-3" data-aos="flip-right" data-aos-duration='1500'>
               <h2 className="text-2xl font-bold text-gray-200 robotoFont">Study Project</h2>
               <h2>Name : <span className="text-xl font-bold robotoFont"> Online Group Study</span></h2>
-              <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">Basically it's a assignment related web project. Here any user add any kind of assignment. This assignment show home page and all assignment section. Any user take whatever assignment he likes according to his needs. All the assignments the user takes will be displayed on his profile.</span></h2>
+              <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont text-gray-400">Basically it's a assignment related web project. Here any user add any kind of assignment. This assignment show home page and all assignment section. Any user take whatever assignment he likes according to his needs. All the assignments the user takes will be displayed on his profile.</span></h2>
               <h2>
-                <span className="font-bold text-gray-300 robotoFont">Feature</span> : <span className="playwriteFont"><br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of assignment. <br />
+                <span className="font-bold text-gray-300 robotoFont">Feature</span> : <span className="playwriteFont text-gray-400"><br /> 1. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of assignment. <br />
                   2. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark. <br /></span>
                 3. I will implement payment method system. This method is stripe payment mathod.Any user can pay for any assignment for this method.
               </h2>
@@ -332,9 +332,9 @@ const Navbar = () => {
             <div className="lg:col-span-3 flex flex-col gap-3" data-aos="flip-left" data-aos-duration='1500'>
               <h2 className="text-2xl font-bold text-gray-200 robotoFont">Blog Project</h2>
               <h2>Name : <span className="text-xl font-bold robotoFont"> MY Inbox</span></h2>
-              <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">Basically it is a blog site project. Any user can post any kind of educational or tourist blog in this project. Users can also comment and report on any blog. And if the user wants to post the blogs,they can also delete then.</span></h2>
+              <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont text-gray-400">Basically it is a blog site project. Any user can post any kind of educational or tourist blog in this project. Users can also comment and report on any blog. And if the user wants to post the blogs,they can also delete then.</span></h2>
               <h2>
-                <span className="font-bold text-gray-300 robotoFont">Feature</span> : <span className="playwriteFont"><br />1.The main feature of this project is the Admin Panel.Admin can control all users through admin panel. Any comment, report deletion and feedback can be given. In short, an admin can control the entire site through the admin panel. <br /> 2. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of blog. <br />
+                <span className="font-bold text-gray-300 robotoFont">Feature</span> : <span className="playwriteFont text-gray-400"><br />1.The main feature of this project is the Admin Panel.Admin can control all users through admin panel. Any comment, report deletion and feedback can be given. In short, an admin can control the entire site through the admin panel. <br /> 2. Here i implement login and register page. For this page, any user login or register for this site. Any user no login or register than this user do not see view information any kind of blog. <br />
                   3. I implement Dark mode and white mode button in this site. Any user in his eye than this user click this dark mode button. When user click dark mode button than all over this site has been dark.</span>
               </h2>
               <h2 className="text-white"><span className="robotoFont">Live link</span> : <NavLink to=' https://my-inbox-c638f.web.app/' className="text-blue-500"> https://my-inbox-c638f.web.app/</NavLink> </h2>
@@ -473,7 +473,7 @@ const Navbar = () => {
               <br className="py-4" />
               <a href="#skill" className="hover:text-gray-400">My SKills</a>
               <a href="#education" className="hover:text-gray-400">My Education</a>
-              <a href="#projects" className="hover:text-gray-400">Projects</a>
+              <a href="#project" className="hover:text-gray-400">Projects</a>
             </div>
 
             {/* Social Icons */}
