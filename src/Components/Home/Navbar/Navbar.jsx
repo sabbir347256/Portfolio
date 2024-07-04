@@ -231,35 +231,35 @@ const Navbar = () => {
             <p>I put your ideas and thus your wishes in the form of a unique web project <br /> that inspires you and you customers.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 justify-center gap-6 p-4">
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
               <img className="h-16" src={html} alt="" />
               <p>HTML</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
               <img className="h-16" src={css} alt="" />
               <p>CSS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
               <img className="h-16" src={tailwind} alt="" />
               <p>TAILWIND CSS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
               <img className="h-16" src={js} alt="" />
               <p>JAVASCRIPT</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
               <img className="h-16" src={react} alt="" />
               <p>REACTJS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
               <img className="h-16" src={node} alt="" />
               <p>NODEJS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-left" data-aos-duration='1500'>
               <img className="h-16" src={express} alt="" />
               <p>NODEJS</p>
             </div>
-            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white">
+            <div className="border-2 p-4 text-center flex flex-col items-center justify-center rounded-2xl gap-4 bg-[#140b1c] hover:bg-[#382263] duration-700 hover:text-white" data-aos="flip-right" data-aos-duration='1500'>
               <img className="h-16" src={mongodb} alt="" />
               <p>MONGODB</p>
             </div>
