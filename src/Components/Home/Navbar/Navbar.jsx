@@ -16,6 +16,11 @@ import verticleImage from '../../../image/verticle.jpeg'
 import { NavLink } from "react-router-dom";
 import project2 from '../../../image/project2.png'
 import project3 from '../../../image/project3.png'
+import { FaPhoneVolume } from "react-icons/fa6";
+import { MdOutlineMail } from "react-icons/md";
+import { IoLocation } from "react-icons/io5";
+
+
 
 // 0d0d0d
 // 151515
@@ -196,13 +201,16 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="bg-black">
-        <section id="home" className="lg:min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 pb-5 lg:gap-96 pt-32 px-5">
+        <section id="home" className="lg:min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 pb-5 lg:pb-0 lg:gap-96 pt-32 px-5">
           <div className="flex flex-col gap-6 robotoFont">
             <h1 className="text-4xl font-bold text-white">I AM</h1>
             <h2 className="text-4xl font-bold text-white">SABBIR AHMMED</h2>
             <h2 className="text-4xl font-bold text-white">MERN Stack Developer</h2>
+            <button className="btn w-32">
+              <a href="../../../image/Untitled document.pdf" download='resume.pdf' target="blank">Download CV</a>
+            </button>
           </div>
-          <img className="h-[450px] lg:h-[500px] w-[300px] lg:w-[350px] bg-black" src={profile} alt="" />
+          <img className="h-[450px] lg:h-[500px] w-[300px] lg:w-[350px] bg-black lg:mt-4" src={profile} alt="" />
         </section>
         <section id="about" className="lg:min-h-screen bg-[#0f0716] flex lg:flex-row-reverse  items-center lg:items-start justify-start lg:justify-end flex-col lg:px-24 gap-6 lg:gap-36 pt-20">
           <div className="px-5 flex flex-col items-start lg:h-screen gap-8 lg:pt-20">
@@ -337,14 +345,14 @@ const Navbar = () => {
           </div>
           <img className="pb-4 lg:pb-0 md:mt-14 h-[500px]" src={education} alt="" />
         </section>
-        <section id="contact" className="lg:min-h-screen bg-[#0f0716]">
+        <section id="contact" className="lg:min-h-screen bg-[#0f0716] lg:mx-5">
           <div className="min-h-screen flex flex-col md:flex-row bg-[#0f0716] text-white">
             {/* First Section: Send Message Form */}
-            <div className="flex-1 p-8 flex flex-col justify-center items-center">
+            <div className="flex-1 p-6 flex flex-col justify-center items-center">
               {/* Heading and Paragraph */}
-              <div className="mb-6 lg:px-16">
-                <h2 className="text-3xl font-bold mb-2 text-[#764bf5]">Get in Touch</h2>
-                <p className="text-gray-300">We'd love to hear from you. Please fill out the form below and we'll get in touch with you as soon as possible.</p>
+              <div className="mb-6 lg:px-16 libreFont">
+                <h2 className="text-3xl font-bold mb-2 text-[#764bf5]">Let’s work together!</h2>
+                <p className="text-gray-300">I design and code beautifully simple things and i love what i do. Just simple like that!</p>
               </div>
 
               <form className="space-y-6 w-full max-w-md">
@@ -385,7 +393,7 @@ const Navbar = () => {
                 {/* Send Message Button */}
                 <button
                   type="submit"
-                  className="w-full p-2 rounded bg-purple-600 hover:bg-purple-700"
+                  className="p-3 rounded-full duration-700 text-sm bg-purple-600 hover:bg-purple-800 libreFont"
                 >
                   Send Message
                 </button>
@@ -393,24 +401,30 @@ const Navbar = () => {
             </div>
 
             {/* Second Section: Contact Information */}
-            <div className="flex-1 bg-black p-8 flex flex-col justify-center ">
-              <div className="flex items-center mb-4">
-                <svg className="w-6 h-6 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h18v2H3v-2zm0 4h18v2H3v-2z" />
-                </svg>
-                <span>+1 (555) 123-4567</span>
+            <div className="flex-1 bg-black p-8 flex flex-col justify-center lg:relative lg:left-20 ">
+              <div className="flex items-center mb-4 gap-4">
+                <FaPhoneVolume className="bg-[#764bf5] text-gray-200 size-12 p-2 rounded-full"></FaPhoneVolume>
+                <div className="libreFont">
+                  <span>Phone</span>
+                  <br />
+                  <span>01638670537</span>
+                </div>
               </div>
-              <div className="flex items-center mb-4">
-                <svg className="w-6 h-6 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h18v2H3v-2zm0 4h18v2H3v-2z" />
-                </svg>
-                <span>email@example.com</span>
+              <div className="flex items-center mb-4 libreFont gap-4">
+                <MdOutlineMail className="bg-[#764bf5] text-gray-200 size-12 p-2 rounded-full"></MdOutlineMail>
+                <div className="libreFont">
+                  <span>Email</span>
+                  <br />
+                  <span>sabbir195323@gmail.com</span>
+                </div>
               </div>
-              <div className="flex items-center mb-4">
-                <svg className="w-6 h-6 text-white mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h18v2H3v-2zm0 4h18v2H3v-2z" />
-                </svg>
-                <span>1234 Address St, City, Country</span>
+              <div className="flex items-center mb-4 libreFont gap-4">
+                <IoLocation className="bg-[#764bf5] text-gray-200 size-12 p-2 rounded-full"></IoLocation>
+                <div className="libreFont">
+                  <span>Address</span>
+                  <br />
+                  <span>Gaochiya,Narayanganj <br />Dhaka,Bangladesh</span>
+                </div>
               </div>
             </div>
           </div>
