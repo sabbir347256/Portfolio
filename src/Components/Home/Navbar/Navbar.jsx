@@ -19,7 +19,7 @@ import project3 from '../../../image/project3.png'
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
-
+import logo1 from '../../../image/logo.png'
 
 
 // 0d0d0d
@@ -28,10 +28,10 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-[#151515] fixed w-full top-0 z-50 shadow-lg px-8 robotoFont">
+      <nav className="bg-black fixed w-full top-0 z-50 shadow-lg px-8 robotoFont">
         <div className="flex justify-between items-center p-4">
           <div>
-            <img className="rounded-full h-12" src={logo} alt="" />
+            <img className="rounded-full h-12 w-12" src={logo1} alt="" />
           </div>
           <div className="lg:hidden">
             <button
@@ -269,7 +269,7 @@ const Navbar = () => {
             <div className="lg:col-span-1 flex items-center mt-16 hidden lg:block">
               <img className="h-[500px]" src={verticleImage} alt="" />
             </div>
-            <div className="lg:col-span-3 flex flex-col gap-3">
+            <div className="lg:col-span-3 flex flex-col gap-3 mt-6 lg:mt-0">
               <h2 className="text-2xl font-bold text-gray-200 robotoFont">Tourism Project</h2>
               <h2>Name : <span className="text-xl font-bold robotoFont"> DREAM TRAVEL</span></h2>
               <h2><span className="font-bold text-gray-300 robotoFont">Description</span> : <span className="playwriteFont">It's a show all tourist place site projcet. Here all user see all famous tourist place in the world. Also know all kinds of information for all place. Any user choose any tourist place then user click view details button and user see all kind of information for this place.</span></h2>
@@ -282,6 +282,7 @@ const Navbar = () => {
               <h2 className="text-white"><span className="robotoFont">Server site github link</span> : <NavLink to='https://github.com/sabbir347256/Dream-Travel-server-site' className='text-blue-500'>https://github.com/sabbir347256/Dream-Travel-server-site</NavLink> </h2>
             </div>
           </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-6 justify-center pt-20">
             <div className="lg:col-span-3 flex flex-col gap-3">
               <h2 className="text-2xl font-bold text-gray-200 robotoFont">Study Project</h2>
@@ -429,6 +430,47 @@ const Navbar = () => {
             </div>
           </div>
         </section>
+        <footer className="bg-gray-900 text-white py-8 soraFont">
+          <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            {/* Logo Section */}
+            <div className="mb-4 md:mb-0">
+              <img src={logo1} alt="Main Logo" className="h-16 w-16 rounded-full" />
+            </div>
+
+            {/* Navbar Links */}
+            <div className="text-center space-x-4 mb-4 md:mb-0 ">
+              <a href="#home" className="hover:text-gray-400">Home</a>
+              <a href="#about" className="hover:text-gray-400">About</a>
+              <a href="#services" className="hover:text-gray-400">Services</a>
+              <br className="py-4" />
+              <a href="#skill" className="hover:text-gray-400">My SKills</a>
+              <a href="#education" className="hover:text-gray-400">My Education</a>
+              <a href="#projects" className="hover:text-gray-400">Projects</a>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex space-x-4 mb-4 md:mb-0">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.675 0h-21.35c-.733 0-1.325.593-1.325 1.325v21.351c0 .732.593 1.324 1.325 1.324h11.494v-9.294h-3.122v-3.622h3.122v-2.667c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.462.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.762v2.31h3.587l-.467 3.622h-3.12v9.293h6.117c.733 0 1.325-.593 1.325-1.325v-21.351c0-.732-.593-1.325-1.325-1.325z" />
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19.6 3h-15.2c-1.42 0-2.4.979-2.4 2.4v15.2c0 1.42.98 2.4 2.4 2.4h15.2c1.42 0 2.4-.98 2.4-2.4v-15.2c0-1.42-.98-2.4-2.4-2.4zm-11.334 16h-3v-8h3v8zm-1.5-9.35c-.967 0-1.75-.784-1.75-1.75 0-.967.783-1.75 1.75-1.75.967 0 1.75.783 1.75 1.75 0 .966-.783 1.75-1.75 1.75zm11.334 9.35h-3v-4.59c0-1.093-.396-1.84-1.386-1.84-.757 0-1.207.512-1.405 1.006-.073.175-.092.419-.092.664v4.76h-3v-8h3v1.09c.396-.611 1.103-1.407 2.686-1.407 1.959 0 3.395 1.28 3.395 4.026v4.291z" />
+                </svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6 hover:text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.627 0-12 5.373-12 12 0 5.304 3.438 9.799 8.205 11.385.6.111.82-.26.82-.577v-2.165c-3.338.724-4.042-1.44-4.042-1.44-.546-1.387-1.334-1.756-1.334-1.756-1.09-.746.083-.73.083-.73 1.205.084 1.839 1.238 1.839 1.238 1.07 1.833 2.809 1.304 3.494.997.108-.775.419-1.305.762-1.605-2.665-.304-5.466-1.332-5.466-5.932 0-1.311.469-2.382 1.235-3.221-.124-.303-.535-1.526.117-3.179 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399 3.006-.405 1.021.006 2.049.139 3.006.405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.876.118 3.179.767.839 1.234 1.911 1.234 3.221 0 4.61-2.805 5.624-5.475 5.921.431.372.815 1.102.815 2.222v3.293c0 .319.217.693.824.575 4.765-1.589 8.2-6.085 8.2-11.387 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="text-center mt-4 text-[#764bf5]">
+            &copy; {new Date().getFullYear()} Sabbir Ahmmed. All rights reserved.
+          </div>
+        </footer>
       </div>
     </div>
   );
