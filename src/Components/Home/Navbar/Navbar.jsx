@@ -219,11 +219,11 @@ const Navbar = () => {
           <img className="h-[450px] lg:h-[500px] w-[300px] lg:w-[350px] bg-black lg:mt-4" src={profile} alt="" />
         </section>
         <section id="about" className="lg:min-h-screen bg-[#0f0716] flex lg:flex-row-reverse  items-center lg:items-start justify-start lg:justify-end flex-col lg:px-24 gap-6 lg:gap-36 pt-20">
-          <div className="px-5 flex flex-col items-start lg:h-screen gap-8 lg:pt-20">
+          <div className="px-5 flex flex-col items-start lg:h-screen gap-8 lg:pt-20" data-aos="fade-down" data-aos-duration="1000">
             <h1 className="text-4xl text-white font-bold robotoFont">About Me</h1>
             <p className="text-gray-400 playwriteFont">I am Sabbir Ahmmed, a passionate MERN stack web developer. I am currently pursuing my HSC at Govt. Science College, Dhaka, and a BSc in CSE (3rd year) at Green University of Bangladesh. My expertise includes HTML, CSS, Tailwind CSS, JavaScript, ReactJS, NodeJS, ExpressJS, and MongoDB. I enjoy creating dynamic and responsive web applications and am always eager to learn and take on new challenges. Let's connect to discuss potential projects and ideas!</p>
           </div>
-          <img className="h-[500px] w-[400px] pb-5" src={aboutImage} alt="" />
+          <img className="h-[500px] w-[400px] pb-5" data-aos="fade-down" data-aos-duration="1000" src={aboutImage} alt="" />
         </section>
         <section id="skill" className="lg:min-h-screen bg-black soraFont flex flex-col items-center justify-center gap-6 pt-10 lg:pt-0 px-5">
           <div className="text-center flex flex-col gap-4">
