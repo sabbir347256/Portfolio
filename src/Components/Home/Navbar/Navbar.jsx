@@ -207,8 +207,8 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="bg-black">
-        <section id="home" className="lg:min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 pb-5 lg:pb-0 lg:gap-96 pt-32 px-5">
-          <div className="flex flex-col gap-3 robotoFont w-full ">
+        <section id="home" className="lg:min-h-screen flex flex-col md:flex-row items-center justify-center gap-10   lg:gap-96 pt-32 px-5">
+          <div className="flex flex-col gap-3 robotoFont w-full h-[350px]">
             <h1 className="text-lg font-bold text-gray-300 libreFont">I'm Sabbir Ahmmed</h1>
             <h2 className="text-lg font-bold text-white"></h2>
             <h2 className="text-6xl font-bold text-white">Hi,I'm <span className="text-green-500">{text}</span></h2>
