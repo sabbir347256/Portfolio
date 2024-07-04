@@ -29,7 +29,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [text] = useTypewriter({
     words: ['Web Developer', 'Frontend Developer', 'MERN Stack Developer'],
-    loop: 3,
+    loop: false,
     onLoopDone: () => console.log(`loop completed after 3 runs.`)
   })
   return (
